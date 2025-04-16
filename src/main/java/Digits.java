@@ -7,7 +7,7 @@ public class Digits
 
 	public Digits(int num)
 	{ 
-	int count = 0; 
+	digitList = new ArrayList <Integer>();
         if(num == 0)
         digitList.add(0);
         int temp = num;
@@ -20,10 +20,12 @@ public class Digits
 
 	public boolean isStrictlyIncreasing()
 	{ 
-	for(int i = 0; i < digitList.size()-1;i++)
+	for(int i = 0; i < digitList.size()-1;i++){
         if(digitList.get(i+1) <= digitList.get(i))
+	{
         return false;
-        return true;
+	}}
+		return true;
 		
 
 	}
