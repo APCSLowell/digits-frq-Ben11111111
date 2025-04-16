@@ -12,10 +12,10 @@ public class Digits
         digitList.add(0);
         int temp = num;
         while(temp > 0){
-	digitList.add(0,n%10);
+	digitList.add(0,temp%10);
 	temp = temp/10;
 	}
-	    
+	}
 	}
 
 	public boolean isStrictlyIncreasing()
