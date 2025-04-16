@@ -8,7 +8,7 @@ public class Digits
 	public Digits(int num)
 	{ 
 	int count = 0; 
-        if(num = 0)
+        if(num == 0)
         digitList.add(0);
         int temp = num;
         while(temp > 0){
@@ -16,7 +16,7 @@ public class Digits
 	temp = temp/10;
 	}
 	}
-	}
+	
 
 	public boolean isStrictlyIncreasing()
 	{ 
